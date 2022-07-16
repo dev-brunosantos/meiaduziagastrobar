@@ -1,0 +1,7 @@
+FLUXO DE TRABALHO 
+
+-- Tela inicial;
+-- Tela de Login (usuário e senha);
+-- Tela de seleção de mesas/comandas (input text e botão = "ok");
+-- Ver mapa de mesas;
+--Tela de produtos;

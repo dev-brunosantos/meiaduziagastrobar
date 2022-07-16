@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>1/2 Dúzia Gastrobar</title>
+</head>
+<body>
+
+    <div class="geral">
+
+        <section class="inicio telas">
+            <div class="cabecalho">
+                <button class="cabecalho__botao btn">Sair</button>
+                <p>1/2 Dúzia Gastrobar</p>
+            </div>
+
+            <div class="corpo">
+                <div class="corpo__logo">
+                    <!-- AQUI FICARÁ O BACKGROUND COM A IMAGEM REFERENTE AO LOGO DA EMPRESA -->
+                </div>
+
+                <button class="corpo__botao btn">Iniciar</button>
+            </div>
+        </section>
+
+        <section class="login telas">
+            <div class="cabecalho">
+                <button class="cabecalho__botao btn">1/2 Dúzia</button>
+                <p>Acesso Restrito</p>
+            </div>
+
+            <div class="corpo corpo__login">
+                
+                <div class="corpo__usuario">
+                    <p>Usuário</p>
+
+                    <select name="usuarios" id="usuarios" class="usuarios">
+                        <option value="">Selecionar</option>
+                        <option value="Bruno">Bruno Garçom</option>
+                        <option value="Mônica">Mônica Garçonete</option>
+                        <option value="Lucas">Lucas Gerente</option>
+                    </select>
+                </div>
+
+                <div class="corpo__senha">
+                    <p>Senha</p>
+
+                    <input type="password" maxlength="4" name="senha" id="senha" class="senha">
+                </div>
+
+                <button class="login__botao btn">Acessar</button>
+
+                <div class="corpo__logo logologo">
+                    <!-- AQUI FICARÁ O BACKGROUND COM A IMAGEM REFERENTE AO LOGO DA EMPRESA -->
+                </div>
+            </div>
+        </section>
+
+        <section class="mesas telas">
+            <div class="cabecalho">
+                <button class="cabecalho__botao btn">Sair</button>
+                <p>1/2 Dúzia Gastrobar</p>
+            </div>
+
+            <p id="usuarioNome" class="usuarioNome"></p>
+
+            <div class="corpo">
+                
+                <div class="corpo__mesas">
+                    <p>Mesa</p>
+
+                    <input type="number" class="escolher">
+
+                    <button class="btn mesas__confirmar">OK</button>
+                </div>
+
+                <button class="ver-mapa btn">Ver Mapa</button>
+
+                <div class="corpo__logo">
+                    <!-- AQUI FICARÁ O BACKGROUND COM A IMAGEM REFERENTE AO LOGO DA EMPRESA -->
+                </div>
+            </div>
+        </section>
+
+        <section class="mapas telas">
+            <div class="cabecalho">
+                <button class="cabecalho__botao btn">Nova Mesa</button>
+                <p>Mapa de Mesas</p>
+            </div>
+
+            <select name="opcoes" id="opcoes" class="opcoes">
+                <option value="Todas">Todas</option>
+                <option value="Contas Abertas">Contas Abertas</option>
+                <option value="Contas Fechadas">Contas Fechadas</option>
+                <option value="Contas Emitidas">Contas Emitidas</option>
+            </select>
+
+            <div class="mapas__corpo corpo">
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="4">
+                <input type="button" value="5">
+                <input type="button" value="6">
+                <input type="button" value="7">
+                <input type="button" value="8">
+                <input type="button" value="9">
+                <input type="button" value="10">
+                <input type="button" value="11">
+                <input type="button" value="12">
+                <input type="button" value="13">
+                <input type="button" value="14">
+                <input type="button" value="15">
+                <input type="button" value="16">
+                <input type="button" value="17">
+                <input type="button" value="18">
+                <input type="button" value="19">
+                <input type="button" value="20">
+                <input type="button" value="21">
+                <input type="button" value="22">
+                <input type="button" value="23">
+                <input type="button" value="24">
+                <input type="button" value="25">
+                <input type="button" value="26">
+                <input type="button" value="27">
+                <input type="button" value="28">
+                <input type="button" value="29">
+                <input type="button" value="30">
+            </div>
+
+        </section>
+        
+        <section class="mesas-selecionadas telas"></section>
+        <section class="lista-de-produtos telas"></section>
+        <section class="produtos-selecionados telas"></section>
+
+
+    </div>
+    
+    <script src="js/main.js"></script>
+
+</body>
+</html>

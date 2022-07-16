@@ -1,0 +1,59 @@
+.mesas {
+    /* display: none; */
+}
+.mesas .corpo {
+    height: 88vh;
+}
+.usuarioNome {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    font-size: 20px;
+    background-color: rgba(69, 69, 69, 0.732);
+}
+.corpo__mesas {
+    width: 100%;
+    height: 8vh;
+    margin: 2em 0;
+    color: var(--branco);
+    display: flex;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.corpo__mesas p {
+    font-size: 20px;
+    position: absolute;
+    left: 2em;
+}
+.escolher, .mesas__confirmar {
+    height: 80%;
+}
+.escolher {
+    width: 30%;
+    margin: 0 1em;
+    font-size: 20px;
+    text-align: center;
+}
+.mesas__confirmar {
+    width: 50px;
+    margin-right: -2em;
+    font-size: 20px;
+}
+.ver-mapa {
+    width: 60%;
+    height: 50px;
+    margin-top: 1em;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 1px var(--preto);
+}
+.mesas .corpo__logo {
+    height: 40vh;
+    margin-top: -50px;
+}
