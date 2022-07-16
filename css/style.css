@@ -63,3 +63,10 @@ body {
     font-weight: bold;
     background-color: var(--branco-transparente);
 }
+
+/*ESSE CÓDIGO OUTRA PARA UM OUTRO ARQUIVO CSS*/
+
+.produto {
+  width: 50%;
+  height: 6.5vh;
+}
