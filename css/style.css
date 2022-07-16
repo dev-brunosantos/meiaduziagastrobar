@@ -4,7 +4,7 @@
 @import url("../css/mapas.css");
 
 /* APAGAR AS SEGUIINTES LINHAS DE CÓDIGOS */
-.mesas-selecionadas, .lista-de-produtos, .produtos-selecionados {
+.lista-de-produtos, .produtos-selecionados {
     display: none;
 }
 /* _____________________________________ */
