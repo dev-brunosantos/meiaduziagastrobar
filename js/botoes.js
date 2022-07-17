@@ -1,3 +1,4 @@
+// FUNCÔES PARA CADA BOTÃO DO SISTEMA
 btnInicio.addEventListener('click', ()=> {
     telaInicial.style.display = "block";
     telaLogin.style.display = "none";
