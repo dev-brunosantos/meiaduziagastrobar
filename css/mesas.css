@@ -1,5 +1,5 @@
 .mesas {
-    /* display: none; */
+    display: none;
 }
 .mesas .corpo {
     height: 88vh;
@@ -54,6 +54,8 @@
     text-shadow: 2px 1px var(--preto);
 }
 .mesas .corpo__logo {
+    position: fixed;
+    bottom: 10%;
     height: 40vh;
     margin-top: -50px;
 }

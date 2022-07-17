@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- LINK DE STILOS DE FONTS E ÍCONES -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- ESTILOS DA PÁGINA -->
     <link rel="stylesheet" href="css/style.css">
 
     <title>1/2 Dúzia Gastrobar</title>
@@ -12,10 +15,9 @@
 <body>
 
     <div class="geral">
-
+        <!-- TELA INICIAL -->
         <section class="inicio telas">
             <div class="cabecalho">
-                <button class="cabecalho__botao btn">Sair</button>
                 <p>1/2 Dúzia Gastrobar</p>
             </div>
 
@@ -24,13 +26,14 @@
                     <!-- AQUI FICARÁ O BACKGROUND COM A IMAGEM REFERENTE AO LOGO DA EMPRESA -->
                 </div>
 
-                <button class="corpo__botao btn">Iniciar</button>
+                <button id="iniciarApp" class="corpo__botao btn">Iniciar</button>
             </div>
         </section>
 
+        <!-- TELA DE LOGIN -->
         <section class="login telas">
             <div class="cabecalho">
-                <button class="cabecalho__botao btn">1/2 Dúzia</button>
+                <button id="inicio" class="cabecalho__botao btn">1/2 Dúzia</button>
                 <p>Acesso Restrito</p>
             </div>
 
@@ -53,7 +56,7 @@
                     <input type="password" maxlength="4" name="senha" id="senha" class="senha">
                 </div>
 
-                <button class="login__botao btn">Acessar</button>
+                <button id="acessar" class="login__botao btn">Acessar</button>
 
                 <div class="corpo__logo logologo">
                     <!-- AQUI FICARÁ O BACKGROUND COM A IMAGEM REFERENTE AO LOGO DA EMPRESA -->
@@ -61,9 +64,10 @@
             </div>
         </section>
 
+        <!-- TELA DE SELEÇÃO DAS MESAS -->
         <section class="mesas telas">
             <div class="cabecalho">
-                <button class="cabecalho__botao btn">Sair</button>
+                <button id="sair" class="cabecalho__botao btn">Sair</button>
                 <p>1/2 Dúzia Gastrobar</p>
             </div>
 
@@ -76,10 +80,10 @@
 
                     <input type="number" class="escolher">
 
-                    <button class="btn mesas__confirmar">OK</button>
+                    <button id="confirmarMesa" class="btn mesas__confirmar">OK</button>
                 </div>
 
-                <button class="ver-mapa btn">Ver Mapa</button>
+                <button id="verMapa" class="ver-mapa btn">Ver Mapa</button>
 
                 <div class="corpo__logo">
                     <!-- AQUI FICARÁ O BACKGROUND COM A IMAGEM REFERENTE AO LOGO DA EMPRESA -->
@@ -87,9 +91,10 @@
             </div>
         </section>
 
+        <!-- TELA DO MAPA DAS MESAS DO SALÃO -->
         <section class="mapas telas">
             <div class="cabecalho">
-                <button class="cabecalho__botao btn">Nova Mesa</button>
+                <button id="voltar" class="cabecalho__botao btn">Nova Mesa</button>
                 <p>Mapa de Mesas</p>
             </div>
 
@@ -135,14 +140,148 @@
 
         </section>
         
-        <section class="mesas-selecionadas telas"></section>
-        <section class="lista-de-produtos telas"></section>
-        <section class="produtos-selecionados telas"></section>
+        <!-- TELA DE ESCOLHA DE PRODUTOS POR CÓDIGOS -->
+        <section class="mesas-selecionadas telas">
+            <div class="cabecalho">
+                <button id="voltarMesa" class="cabecalho__botao btn">Voltar Mesa</button>
+                <p>Cartão</p>
+            </div>
+
+            <p id="numMesa" class="numMesa"></p>
+
+            <div class="corpo corpo__mesas_selecionadas">
+                
+                <div class="corpo__produtos">
+
+                    <input type="number" class="escolher produtos" placeholder="Código do produto">
+
+                    <button class="btn produto__confirmar">OK</button>
+
+                    <button class="btn produto__pesquisar">
+                        <i class="fas fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <div class="corpo__logo">
+                    <!-- AQUI FICARÁ O BACKGROUND COM A IMAGEM REFERENTE AO LOGO DA EMPRESA -->
+                </div>
+
+                <div class="corpo__opcoes">
+                    <div class="corpo__opcoes-icones">
+                        <i class="fas fa-book"></i>
+                        Comanda
+                    </div>
+
+                    <div class="corpo__opcoes-icones">
+                        <i class="fas fa-cart-shopping"></i>
+                        Pedido
+                    </div>
+
+                    <div class="corpo__opcoes-icones">
+                        <i class="fas fa-pen"></i>
+                        Conta
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LISTA DE PRODUTOS PARA ESCOLHA -->
+        <section class="lista-de-produtos telas">
+            <div class="cabecalho">
+                <button class="cabecalho__botao btn">Nova Mesa</button>
+                <p id="mesa-escolhida">Número da Mesa</p>
+            </div>
+
+            <div class="corpo corpo-produtos">
+    
+                <div class="produtos-lista">
+                    <div class="produtos-itens">PRODUTO 1</div>
+                    <div class="produtos-itens">PRODUTO 2</div>
+                    <div class="produtos-itens">PRODUTO 3</div>
+                    <div class="produtos-itens">PRODUTO 4</div>
+                    <div class="produtos-itens">PRODUTO 5</div>
+                    <div class="produtos-itens">PRODUTO 6</div>
+                    <div class="produtos-itens">PRODUTO 7</div>
+                    <div class="produtos-itens">PRODUTO 8</div>
+                    <div class="produtos-itens">PRODUTO 9</div>
+                    <div class="produtos-itens">PRODUTO 10</div>
+                    <div class="produtos-itens">PRODUTO 11</div>
+                    <div class="produtos-itens">PRODUTO 12</div>
+                    <div class="produtos-itens">PRODUTO 13</div>
+                    <div class="produtos-itens">PRODUTO 14</div>
+                    <div class="produtos-itens">PRODUTO 15</div>
+                    <div class="produtos-itens">PRODUTO 16</div>
+                    <div class="produtos-itens">PRODUTO 17</div>
+                    <div class="produtos-itens">PRODUTO 18</div>
+                    <div class="produtos-itens">PRODUTO 19</div>
+                    <div class="produtos-itens">PRODUTO 20</div>
+                </div>
+    
+                <div class="produtos-escolhidos"></div>
+                
+            </div>
+        </section>
+
+        <!-- PRODUTOS SELECIONADOS -->
+        <section class="produtos-selecionados telas">
+            <div class="cabecalho">
+                <button class="cabecalho__botao btn">Voltar Mesa</button>
+                <p>Cartão</p>
+            </div>
+
+            <p id="numMesa" class="numMesa"></p>
+
+            <div class="corpo corpo__mesas_selecionadas">
+                
+                <div class="corpo__produtos">
+
+                    <input type="number" class="escolher produtos" placeholder="Código do produto">
+
+                    <button class="btn produto__confirmar">X</button>
+
+                    <button class="btn produto__pesquisar">
+                        <i class="fas fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <div class="nome-do-produto">
+
+                    <div id="quantidade" class="quantidade">
+                        Quant.<span>1</span>
+
+                        <button class="quantMais btn">-</button>
+                        <button class="quantMenos btn">+</button>
+                    
+                    </div>
+                </div>
+
+                <button class="login__botao btn">Incluir</button>
+
+                <div class="corpo__opcoes">
+                    <div class="corpo__opcoes-icones">
+                        <i class="fas fa-book"></i>
+                        Comanda
+                    </div>
+
+                    <div class="corpo__opcoes-icones">
+                        <i class="fas fa-cart-shopping"></i>
+                        Pedido
+                    </div>
+
+                    <div class="corpo__opcoes-icones">
+                        <i class="fas fa-pen"></i>
+                        Conta
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </div>
     
     <script src="js/main.js"></script>
+    <script src="js/botoes.js"></script>
+    <script src="js/usuarios.js"></script>
 
 </body>
 </html>

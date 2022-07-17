@@ -1,30 +1,22 @@
-// TELA DE LOGIN DE FUNCIONÁRIOS
+// DECLARAÇÕES DE VARIÁVEIS E CONSTANTES
+const telaInicial = document.querySelector('.inicio');
+const telaLogin = document.querySelector('.login');
+const telaMesas = document.querySelector('.mesas');
+const telaMapas = document.querySelector('.mapas');
+const telaMesaSelecionada = document.querySelector('.mesas-selecionadas');
+const telaProdutos = document.querySelector('.lista-de-produtos');
+const telaProdutosSelecionados = document.querySelector('.produtos-selecionados');
 
-/*var tela = document.querySelector('.login');
+//BOTÔES DA PÁGINA
+var btnInicio = document.querySelector('#inicio');
+var btnIniciar = document.querySelector('#iniciarApp');
+var btnAcessar = document.querySelector('#acessar');
+var btnSair = document.querySelector('#sair');
+var btnMapa = document.querySelector('#verMapa');
+var btnVoltar = document.querySelector('#voltar');
+var btnConfirmarMesa = document.querySelector('#confirmarMesa');
+var btnVoltarMesa = document.querySelector('#voltarMesa');
 
-var usuario = document.querySelector('#funcionarios');
-var senha;
-
-const botaoIniciar = document.querySelector('#btnLogin');
-botaoIniciar.addEventListener('click', usuarioIniciar);
-
-function usuarioIniciar() {
-
-    var usuarioNome = usuario.value;
-    console.log(usuarioNome);
-
-    if(usuarioNome == "Bruno") {
-        tela.style.backgroundColor = "blue"
-    }
-    else if(usuarioNome == "Mônica") {
-        tela.style.backgroundColor = "pink"
-    }
-    else if(usuarioNome == "Lucas") {
-        tela.style.backgroundColor = "green"
-    }
-    else {
-        alert("Usuário Inválido")
-    }
-
-}
-*/
+// FUNCIONARIOS
+var usuarios = document.querySelector('#usuarios');
+var senha = document.querySelector('#senha');

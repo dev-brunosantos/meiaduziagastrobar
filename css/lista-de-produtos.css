@@ -1,0 +1,33 @@
+.lista-de-produtos {
+    display: none;
+}
+.lista-de-produtos .corpo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.produtos-lista, .produtos-escolhidos {
+    background-color: var(--branco);
+    border: solid var(--preto);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90vh;
+}
+.produtos-lista {
+    width: 40%;
+}
+.produtos-escolhidos {
+    width: 60%;
+}
+.produtos-itens {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    padding: 0 2%;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: justify;
+    border-bottom: 0.5px solid black;
+}
